@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="{% static 'assets/img/fj/logo.png   ' %}" type="image/x-icon"/>
 
     <!--== Google Fonts ==-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {#    <link rel="preconnect" href="https://fonts.googleapis.com">#}
+    {#    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>#}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
           rel="stylesheet">
 
@@ -234,7 +234,7 @@
 <div class="container-fluid p-8 sm-top">
     <div class=" m-auto text-center">
         <div class="section-title">
-{#            <img style="width: 70px; " src="{% static 'assets/img/award.png' %}" class="position-absolute d-flex flex mb-3" alt="Icon">#}
+            {#            <img style="width: 70px; " src="{% static 'assets/img/award.png' %}" class="position-absolute d-flex flex mb-3" alt="Icon">#}
             <h4>Top Brands Trust Us, You Can Too</h4>
             <hr style=" width: 20%;
   margin: 10px auto;
@@ -248,7 +248,7 @@
 <div class="container-fluid sm-top">
     <div class=" m-auto text-center">
         <div class="section-title">
-{#            <img style="width: 70px; " src="{% static 'assets/img/award.png' %}" class="position-absolute d-flex flex mb-3" alt="Icon">#}
+            {#            <img style="width: 70px; " src="{% static 'assets/img/award.png' %}" class="position-absolute d-flex flex mb-3" alt="Icon">#}
             <h4>Our Acheivements, speaks for our self.</h4>
             <hr style=" width: 20%;
   margin: 10px auto;
@@ -257,15 +257,17 @@
         </div>
     </div>
     <div class="row">
-    <div class="col-lg-6">
-    <img style="object-fit: cover; height: auto" src="{% static 'assets/img/award1.png' %}" class="img-fluid w-100"
-         alt="Full-Screen Image">
-    </div>
-    <div class="col-lg-6">
-    <img style="object-fit: cover; height: auto" src="{% static 'assets/img/award2.png' %}" class="img-fluid w-100"
-         alt="Full-Screen Image">
-    </div>
+        <div class="col-lg-6">
+            <img style="object-fit: cover; height: auto" src="{% static 'assets/img/award1.png' %}"
+                 class="img-fluid w-100"
+                 alt="Full-Screen Image">
         </div>
+        <div class="col-lg-6">
+            <img style="object-fit: cover; height: auto" src="{% static 'assets/img/award2.png' %}"
+                 class="img-fluid w-100"
+                 alt="Full-Screen Image">
+        </div>
+    </div>
 </div>
 
 <!--== Start About Area Wrapper ==-->
@@ -295,6 +297,85 @@
     </div>
 </div>
 <!--== End About Area Wrapper ==-->
+<div class="feature-area-wrapper">
+    <div class="container">
+        <div class="row mtn-sm-50 mtn-md-5">
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/hr.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>HR Initiatives</h5>
+                        <p>Our team brings years of experience to make your event flawless.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/family.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Family Day</h5>
+                        <p>We strive to make a lasting
+                            impression of contact of the
+                            company with your family.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/02.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Annual Day</h5>
+                        <p>Celebrate company achievements, employee contributions, and builds team spirit.</p>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/theme.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Theme Day</h5>
+                        <p>Foster creativity, team bonding, and a fun break from the workday routine.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/seminar.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Conference Seminars</h5>
+                        <p>Provide professional development and networking opportunities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/network.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Networking Events</h5>
+                        <p>connect professionals within a field, fostering relationships and potential business
+                            opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--== Start About Area Wrapper ==-->
 <div class="about-area-wrapper sm-top">
@@ -309,13 +390,14 @@
             <div class="col-lg-5">
                 <div class="about-content">
                     <h6>WE DO</h6>
-                    <h2>INDUSTRIAL EVENTS</h2>
+                    <h2>SOCIAL EVENTS</h2>
                     <span class="about-since">Since 2017</span>
                     <p><strong>The Function Junction</strong> understands the unique demands of industrial events. We'll
                         manage the complexities of product showcases, trade shows, and facility tours with precision.
                         Our expertise ensures a smooth, professional experience that highlights your innovations,
                         attracts potential partners, and strengthens your industry presence.</p>
-                    <a href="#" class="btn-about">MORE DETAILS <i class="mdi mdi-chevron-double-right"></i></a>
+                    {#                    <a href="#" class="btn-about"> <i class="mdi mdi-chevron-double-right"></i></a>#}
+                    <h1></h1>
                 </div>
             </div>
         </div>
@@ -323,20 +405,98 @@
 </div>
 <!--== End About Area Wrapper ==-->
 
+<div class="feature-area-wrapper">
+    <div class="container">
+        <div class="row mtn-sm-50 mtn-md-5">
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/store.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Store Launches</h5>
+                        <p>Spectacular store launches are our specialty – let us make your debut shine<!doctype html>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/02.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Brand Activation</h5>
+                        <p>Our events ignite brand awareness emotional bonds, and boost customer loyalty.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/exibition.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Exibition</h5>
+                        <p>Your exhibition experts we handle every detail for a successful event.</p>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/concert.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Live Concerts</h5>
+                        <p>From intimate gigs to stadium shows, we make your dream concert a reality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/news.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Press Conference</h5>
+                        <p>We manage press conferences, ensuring your message reaches the media.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/product.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Product Launches</h5>
+                        <p>Your product deserves a spectacular launch – we make it happen, flawlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!--== Start About Area Wrapper ==-->
 <div class="about-area-wrapper sm-top">
     <div class="container">
         <div class="row align-items-lg-center">
-            <div class=" col-lg-7 order-lg-1">
+            <div class=" col-lg-6 order-lg-1">
                 <figure class="about-thumb">
-                    <img src="{% static 'assets/img/about2.png' %}" alt="Businex-About"/>
+                    <img src="{% static 'assets/img/wedding.png' %}" alt="Businex-About"/>
                 </figure>
             </div>
 
-            <div class="col-lg-5 order-lg-0">
+            <div class="col-lg-6 order-lg-0">
                 <div class="about-content">
                     <h6>WE DO</h6>
-                    <h2>SOCIAL EVENTS</h2>
+                    <h2>WEDDING EVENTS</h2>
                     <span class="about-since">Since 2017</span>
 
                     <p><strong>The Function Junction</strong> helps you celebrate life's special moments in style.
@@ -352,18 +512,17 @@
 </div>
 <!--== End About Area Wrapper ==-->
 
-<!--== Start Feature Area Wrapper ==-->
-<div class="feature-area-wrapper sm-top">
+<div class="feature-area-wrapper">
     <div class="container">
         <div class="row mtn-sm-50 mtn-md-5">
             <div class="col-md-4">
                 <div class="icon-box-item">
                     <div class="icon-box__icon">
-                        <img src="{% static 'assets/img/feature/01.png' %}" alt="Businex-Feature"/>
+                        <img src="{% static 'assets/img/feature/engagement.png' %}" alt="Businex-Feature"/>
                     </div>
                     <div class="icon-box__info">
-                        <h5>Creative Team</h5>
-                        <p>Our team brings years of experience to make your event flawless.</p>
+                        <h5>Engagement</h5>
+                        <p>Stress-free engagement planning, ensuring a beautiful celebration of your commitment.</p>
                     </div>
                 </div>
             </div>
@@ -371,11 +530,11 @@
             <div class="col-md-4">
                 <div class="icon-box-item">
                     <div class="icon-box__icon">
-                        <img src="{% static 'assets/img/feature/02.png' %}" alt="Businex-Feature"/>
+                        <img src="{% static 'assets/img/feature/rin.png' %}" alt="Businex-Feature"/>
                     </div>
                     <div class="icon-box__info">
-                        <h5>Tailored experiences</h5>
-                        <p>We'll create a unique event that reflects your brand and objectives.</p>
+                        <h5>Wedding Parties</h5>
+                        <p>Elegant event planning for the wedding of your dreams.</p>
                     </div>
                 </div>
             </div>
@@ -383,18 +542,52 @@
             <div class="col-md-4">
                 <div class="icon-box-item">
                     <div class="icon-box__icon">
-                        <img src="{% static 'assets/img/feature/03.png' %}" alt="Businex-Feature"/>
+                        <img src="{% static 'assets/img/feature/sangeet.png' %}" alt="Businex-Feature"/>
                     </div>
                     <div class="icon-box__info">
-                        <h5>Stress-free planning</h5>
-                        <p>We handle the logistics, so you can relax and enjoy your event.</p>
+                        <h5>Sangeet Ceremony</h5>
+                        <p>Celebrate your love with unforgettable Sangeet Ceremonies - vibrant, joyous, expertly planned.</p>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/venue.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Venue Decoration</h5>
+                        <p>Expert venue decoration for weddings that dazzle and inspire.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/gift.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Giftings</h5>
+                        <p>Crafting unforgettable wedding experiences with personalized details and seamless execution</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box-item">
+                    <div class="icon-box__icon">
+                        <img src="{% static 'assets/img/feature/haldi.png' %}" alt="Businex-Feature"/>
+                    </div>
+                    <div class="icon-box__info">
+                        <h5>Haldi Ceremony</h5>
+                        <p>Celebrate your love with a beautiful Haldi ceremony with stunning settings.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--== End Feature Area Wrapper ==-->
 
 
 <!--== Start Service Area Wrapper ==-->
@@ -557,7 +750,7 @@
 
             <div class="col-6 col-md-3 text-center">
                 <div class="counter-item">
-                    <h2 class="counter-number"><span class="counter">300</span>+</h2>
+                    <h2 class="counter-number"><span class="counter">1000</span>+</h2>
                     <h6 class="counter-txt">Successful Events</h6>
                 </div>
             </div>
@@ -810,7 +1003,7 @@
                     <div class="widget-item">
                         <div class="about-widget">
                             <a href="index.html"><img src="{% static 'assets/img/fj/logo.png' %}" alt="Logo"/></a>
-                            <p>During the summer my wife and I got to go on an amazing road trip in Vancouver.</p>
+{#                            <p>During the summer my wife and I got to go on an amazing road trip in Vancouver.</p>#}
 
                             <div class="copyright-txt">
                                 <p>&copy;
